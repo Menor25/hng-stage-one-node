@@ -10,7 +10,7 @@ app.get('/api', (req, res) => {
 
   // Set current UTC time within +/-2 minutes
   const currentUtcTime = new Date();
-  currentUtcTime =  `${currentUtcTime.getUTCFullYear()}-${String(currentUtcTime.getUTCMonth() + 1).padStart(2, '0')}-${String(currentUtcTime.getUTCDate()).padStart(2, '0')}T${String(currentUtcTime.getUTCHours()).padStart(2, '0')}:${String(currentUtcTime.getUTCMinutes()).padStart(2, '0')}:${String(currentUtcTime.getUTCSeconds()).padStart(2, '0')}Z`
+  `${currentUtcTime.getUTCFullYear()}-${String(currentUtcTime.getUTCMonth() + 1).padStart(2, '0')}-${String(currentUtcTime.getUTCDate()).padStart(2, '0')}T${String(currentUtcTime.getUTCHours()).padStart(2, '0')}:${String(currentUtcTime.getUTCMinutes()).padStart(2, '0')}:${String(currentUtcTime.getUTCSeconds()).padStart(2, '0')}Z`
   //currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2);
 
   // Formating the UTC time to the desired format
