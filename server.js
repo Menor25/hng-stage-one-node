@@ -15,7 +15,7 @@ app.get('/api', (req, res) => {
   currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2); 
 
   // Format the UTC time using moment to the desired format
-  const formattedUtcTime = moment(currentUtcTime).utc().format('YYYY-MM-DDTHH:mm:ss[Z]');
+  const formattedUtcTime = moment(currentUtcTime).utc().format();
 
   //currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2);
 
