@@ -13,7 +13,7 @@ app.get('/api', (req, res) => {
   currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2);
 
   // Formating the UTC time to the desired format
-  const formattedUtcTime = currentUtcTime.toISOString();
+  const formattedUtcTime = currentUtcTime.toISOString().replace(/\.\d{3}Z$/, 'Z');
   // GitHub URLs
   const githubFileUrl = 'https://github.com/Menor25/hng-stage-one-node/blob/main/server.js';
   const githubRepoUrl = 'https://github.com/Menor25/hng-stage-one-node';
