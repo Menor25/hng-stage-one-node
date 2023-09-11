@@ -13,8 +13,8 @@ app.get('/api', (req, res) => {
   currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2); // Randomize within +/-2 minutes
 
   // GitHub URLs
-  const githubFileUrl = 'https://github.com/username/repo/blob/main/file_name.ext';
-  const githubRepoUrl = 'https://github.com/username/repo';
+  const githubFileUrl = 'https://github.com/Menor25/hng-stage-one-node/blob/main/server.js';
+  const githubRepoUrl = 'https://github.com/Menor25/hng-stage-one-node';
 
   // Prepare the response data
   const data = {
