@@ -8,10 +8,12 @@ app.get('/api', (req, res) => {
   // Retrieve query parameters
   const { slack_name, track } = req.query;
 
-  // VSet current UTC time within +/-2 minutes
+  // Set current UTC time within +/-2 minutes
   const currentUtcTime = new Date();
-  currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2); // Randomize within +/-2 minutes
+  currentUtcTime.setMinutes(currentUtcTime.getMinutes() + Math.floor(Math.random() * 5) - 2);
 
+  // Formating the UTC time to the desired format
+  const formattedUtcTime = currentUtcTime.toISOString();
   // GitHub URLs
   const githubFileUrl = 'https://github.com/Menor25/hng-stage-one-node/blob/main/server.js';
   const githubRepoUrl = 'https://github.com/Menor25/hng-stage-one-node';
